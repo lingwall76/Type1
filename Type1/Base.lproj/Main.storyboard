@@ -16,75 +16,103 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-DQ-Uz6">
-                                <rect key="frame" x="194" y="132" width="212" height="71"/>
-                                <color key="backgroundColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Glucose"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="irx-BF-8lE" kind="show" id="U2q-sy-KO8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahK-zj-3bw">
-                                <rect key="frame" x="194" y="246" width="212" height="71"/>
-                                <color key="backgroundColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQg-DQ-Uz6">
+                                <rect key="frame" x="194" y="72" width="212" height="89"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="ElX-gZ-2uh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="212" id="7wL-nm-uWe"/>
+                                    <constraint firstAttribute="width" constant="212" id="e4j-Kx-H6i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Insulin"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                <state key="normal" title="Glucose" backgroundImage="sugar">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="oF1-Oj-3O2" kind="show" id="sDy-Zp-9pa"/>
+                                    <segue destination="irx-BF-8lE" kind="show" id="hjh-gL-6TM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ias-HV-BY7">
-                                <rect key="frame" x="194" y="358" width="212" height="71"/>
-                                <color key="backgroundColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahK-zj-3bw">
+                                <rect key="frame" x="194" y="204" width="212" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="12t-nb-sQt"/>
+                                    <constraint firstAttribute="width" constant="212" id="12v-Ue-a21"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Food Tracker"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                <state key="normal" title="Insulin" backgroundImage="Syringe2">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="JNI-PG-FuR" kind="show" id="okM-GI-MIh"/>
+                                    <segue destination="oF1-Oj-3O2" kind="show" id="Bsr-0a-9qd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny9-Sg-TN0">
-                                <rect key="frame" x="194" y="467" width="212" height="71"/>
-                                <color key="backgroundColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Results"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ias-HV-BY7">
+                                <rect key="frame" x="194" y="336" width="212" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="V8c-lS-ytt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                <state key="normal" title="Food Tracker" backgroundImage="food">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="xDM-N6-5a2" kind="show" id="GPE-M7-6Mo"/>
+                                    <segue destination="JNI-PG-FuR" kind="show" id="Etk-6Q-w0Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny9-Sg-TN0">
+                                <rect key="frame" x="194" y="468" width="212" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="tEs-8S-S6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="32"/>
+                                <state key="normal" title="Results" backgroundImage="graph">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.11356237769999999" blue="0.2997137366" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="xDM-N6-5a2" kind="show" id="jfB-0u-OSE"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647064924240112" green="0.95294123888015747" blue="0.93333339691162109" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.24705883860588074" green="0.054901964962482452" blue="0.1098039299249649" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQg-DQ-Uz6" secondAttribute="centerX" id="EX1-k1-mfq"/>
-                            <constraint firstAttribute="centerX" secondItem="ahK-zj-3bw" secondAttribute="centerX" id="dKX-Wf-ZcJ"/>
-                            <constraint firstAttribute="centerX" secondItem="ias-HV-BY7" secondAttribute="centerX" id="eUu-Zk-2ot"/>
-                            <constraint firstAttribute="centerX" secondItem="Ny9-Sg-TN0" secondAttribute="centerX" id="tWe-Nf-y3a"/>
+                            <constraint firstItem="Ny9-Sg-TN0" firstAttribute="top" secondItem="ias-HV-BY7" secondAttribute="bottom" constant="42" id="2hV-le-Vo6"/>
+                            <constraint firstItem="Ny9-Sg-TN0" firstAttribute="height" secondItem="ias-HV-BY7" secondAttribute="height" id="5xk-ll-gA3"/>
+                            <constraint firstItem="ahK-zj-3bw" firstAttribute="top" secondItem="KQg-DQ-Uz6" secondAttribute="bottom" constant="43" id="C2W-Rq-l6T"/>
+                            <constraint firstAttribute="centerX" secondItem="ahK-zj-3bw" secondAttribute="centerX" id="Dbl-E5-wdB"/>
+                            <constraint firstItem="Ny9-Sg-TN0" firstAttribute="top" secondItem="ias-HV-BY7" secondAttribute="bottom" constant="42" id="Ec1-yM-HmT"/>
+                            <constraint firstAttribute="centerX" secondItem="Ny9-Sg-TN0" secondAttribute="centerX" id="EiI-B3-p0y"/>
+                            <constraint firstAttribute="centerX" secondItem="KQg-DQ-Uz6" secondAttribute="centerX" id="TFG-9J-5aj"/>
+                            <constraint firstItem="KQg-DQ-Uz6" firstAttribute="width" secondItem="ahK-zj-3bw" secondAttribute="width" id="Y9G-CH-iKF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ny9-Sg-TN0" secondAttribute="bottom" constant="42" id="cFr-fj-5QJ"/>
+                            <constraint firstItem="ias-HV-BY7" firstAttribute="top" secondItem="ahK-zj-3bw" secondAttribute="bottom" constant="42" id="cdn-mS-gEF"/>
+                            <constraint firstItem="KQg-DQ-Uz6" firstAttribute="height" secondItem="ahK-zj-3bw" secondAttribute="height" constant="-1" id="dwk-Ji-fDB"/>
+                            <constraint firstItem="ias-HV-BY7" firstAttribute="height" secondItem="ahK-zj-3bw" secondAttribute="height" id="fTq-gO-lGf"/>
+                            <constraint firstItem="ahK-zj-3bw" firstAttribute="top" secondItem="KQg-DQ-Uz6" secondAttribute="bottom" constant="43" id="ks5-aW-NOC"/>
+                            <constraint firstAttribute="centerX" secondItem="ias-HV-BY7" secondAttribute="centerX" id="nxy-wq-dYD"/>
+                            <constraint firstItem="ias-HV-BY7" firstAttribute="top" secondItem="ahK-zj-3bw" secondAttribute="bottom" constant="42" id="ufC-Kb-uhw"/>
+                            <constraint firstItem="KQg-DQ-Uz6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="yzw-Or-FwJ"/>
+                            <constraint firstItem="KQg-DQ-Uz6" firstAttribute="width" secondItem="ahK-zj-3bw" secondAttribute="width" id="zFL-Ye-fCE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Type1" id="hky-Lu-cOI"/>
@@ -105,11 +133,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter glucose (mg/dl)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9v-gs-AvE">
-                                <rect key="frame" x="208" y="224" width="184" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJF-Hs-gDf">
                                 <rect key="frame" x="261" y="276" width="79" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -133,8 +156,6 @@
                         <constraints>
                             <constraint firstItem="iy9-XD-p4N" firstAttribute="top" secondItem="ZJF-Hs-gDf" secondAttribute="bottom" constant="294" id="3jA-fF-bR4"/>
                             <constraint firstItem="ZJF-Hs-gDf" firstAttribute="centerX" secondItem="phR-uK-4KG" secondAttribute="centerX" id="F1Y-ib-9OJ"/>
-                            <constraint firstAttribute="centerX" secondItem="h9v-gs-AvE" secondAttribute="centerX" constant="-1" id="Gbl-VL-u4C"/>
-                            <constraint firstItem="ZJF-Hs-gDf" firstAttribute="top" secondItem="h9v-gs-AvE" secondAttribute="bottom" constant="22" id="ZPv-q3-SEU"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -292,9 +313,6 @@
                                 <rect key="frame" x="206" y="139" width="189" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                                <connections>
-                                    <segue destination="tMx-3g-Lpl" kind="show" id="ZqU-Vc-X0b"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proteins:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZi-KM-pLP">
                                 <rect key="frame" x="130" y="190" width="68" height="21"/>
@@ -400,7 +418,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Syringe2" width="1600" height="1200"/>
+        <image name="food" width="640" height="325"/>
         <image name="graph" width="530" height="420"/>
+        <image name="sugar" width="350" height="300"/>
     </resources>
-    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
