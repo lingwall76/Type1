@@ -115,7 +115,9 @@
                             <constraint firstItem="KQg-DQ-Uz6" firstAttribute="width" secondItem="ahK-zj-3bw" secondAttribute="width" id="zFL-Ye-fCE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Type1" id="hky-Lu-cOI"/>
+                    <navigationItem key="navigationItem" title="Type1" id="hky-Lu-cOI">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="W7o-9g-pek"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,11 +153,26 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mg/dl" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="U4m-Th-o9i">
+                                <rect key="frame" x="272" y="202" width="56" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter glucose:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0a0-SK-Wtn">
+                                <rect key="frame" x="245" y="173" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iy9-XD-p4N" firstAttribute="top" secondItem="ZJF-Hs-gDf" secondAttribute="bottom" constant="294" id="3jA-fF-bR4"/>
-                            <constraint firstItem="ZJF-Hs-gDf" firstAttribute="centerX" secondItem="phR-uK-4KG" secondAttribute="centerX" id="F1Y-ib-9OJ"/>
+                            <constraint firstItem="iy9-XD-p4N" firstAttribute="top" secondItem="ZJF-Hs-gDf" secondAttribute="bottom" constant="294" id="2W0-e2-glN"/>
+                            <constraint firstAttribute="centerX" secondItem="0a0-SK-Wtn" secondAttribute="centerX" id="61A-ql-f4k"/>
+                            <constraint firstItem="0a0-SK-Wtn" firstAttribute="top" secondItem="8Jq-y3-mAx" secondAttribute="bottom" constant="109" id="DcO-G6-E1s"/>
+                            <constraint firstItem="U4m-Th-o9i" firstAttribute="top" secondItem="0a0-SK-Wtn" secondAttribute="bottom" constant="8" symbolic="YES" id="HUG-Vu-UNm"/>
+                            <constraint firstAttribute="centerX" secondItem="U4m-Th-o9i" secondAttribute="centerX" id="dJF-4k-Uqj"/>
+                            <constraint firstAttribute="centerX" secondItem="ZJF-Hs-gDf" secondAttribute="centerX" id="o5n-56-tnW"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -401,11 +418,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FPO-5p-vso" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IXL-A5-n4H">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="Sugarcubes" id="IXL-A5-n4H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.90196084980000002" green="0.96862751250000001" blue="0.97254908080000002" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="barTintColor" red="0.67843139171600342" green="0.070588238537311554" blue="0.19215688109397888" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -418,6 +438,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Sugarcubes" width="3000" height="2000"/>
         <image name="Syringe2" width="1600" height="1200"/>
         <image name="food" width="640" height="325"/>
         <image name="graph" width="530" height="420"/>
